@@ -1,0 +1,188 @@
+mali_kbase_mt6835.ko: mtk_sec_heap.ko trusted_mem.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko ged.ko mtk_gpufreq_mt6835.ko mtk_gpu_qos.ko mtk_qos.ko sspm_v3.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+tuihw-inf.ko:
+sec.ko:
+mcupm.ko: mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+atf_logger.ko:
+mt6835-mt6377.ko: snd-soc-mt6377.ko mt6377-accdet.ko snd-soc-mt6835-afe.ko snd-soc-mtk-scp-ultra.ko mtk-scp-ultra.ko snd-soc-mtk-common.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko snd-soc-sipa.ko mtk-sp-spk-amp.ko mtk-scp-audio.ko snd-soc-audiodsp-common.ko audio_ipi.ko mtk-scp-audiocommon.ko scp.ko mtk-afe-external.ko adsp.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mtk_gpu_hal.ko:
+snd-soc-mt6835-afe.ko: snd-soc-mtk-scp-ultra.ko mtk-scp-ultra.ko snd-soc-mtk-common.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk-scp-audio.ko snd-soc-audiodsp-common.ko audio_ipi.ko mtk-scp-audiocommon.ko scp.ko mtk-afe-external.ko adsp.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+cam_qos.ko:
+mtk-sp-spk-amp.ko: mtk-scp-audio.ko snd-soc-audiodsp-common.ko audio_ipi.ko mtk-scp-audiocommon.ko scp.ko mtk-afe-external.ko adsp.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mtk-lpm.ko:
+cpuqos_v3.ko:
+v4l2-async.ko:
+mtk_battery_oc_throttling.ko:
+mtk_cm_mgr_mt6835.ko: mtk_cm_mgr.ko mtk_cm_ipi.ko
+camera_isp.ko: archcounter_timesync.ko cam_qos.ko
+mtk_perf_common.ko: cpufreq_sugov_ext.ko thermal_interface.ko mtk_qos.ko sspm_v3.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+board_temp.ko:
+met_scmi_api.ko: met.ko
+mainaf.ko:
+mtk-ssc-dbg-v2.ko: mtk-ssc.ko
+mtk-pwm.ko:
+gpueb.ko: mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+richtek_spm_cls.ko: mtk-sp-spk-amp.ko mtk-scp-audio.ko snd-soc-audiodsp-common.ko audio_ipi.ko mtk-scp-audiocommon.ko scp.ko mtk-afe-external.ko adsp.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+thermal-generic-adc.ko:
+mtk-lpm-dbg-mt6835.ko: mtk-lpm-dbg-common-v1.ko mtk-lpm.ko
+charger_cooling.ko:
+mtk_heap_debug.ko: mtk_sec_heap.ko trusted_mem.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+btif_drv.ko:
+focaltech_tp.ko: tuihw-inf.ko sec_cmd.ko
+clk-dbg-mt6835.ko:
+mtk_bp_thl.ko:
+snd-soc-sipa.ko:
+mtk-swpm-core-dbg-v6835.ko: mtk-swpm.ko mtk_qos.ko sspm_v3.ko
+mtk-afe-external.ko:
+cpufreq_sugov_ext.ko: thermal_interface.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mtk_cpu_power_throttling.ko: mtk_battery_oc_throttling.ko mtk_low_battery_throttling.ko
+cpudvfs.ko:
+soc_temp_lvts.ko: thermal_interface.ko scp.ko mtk-afe-external.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+ccmni.ko: rps_perf.ko
+ccci_util_lib.ko:
+mtk-vow.ko: scp.ko mtk-afe-external.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mtk_gpu_qos.ko: mtk_qos.ko sspm_v3.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mtk_tinysys_ipi.ko: mtk_rpmsg_mbox.ko mtk-mbox.ko
+mtk_dynamic_loading_throttling.ko: mtk_low_battery_throttling.ko
+connadp.ko:
+sensorhub.ko: scp.ko mtk-afe-external.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+gps_pwr.ko: connadp.ko
+met.ko:
+c2k_usb_f_via_atc.ko: c2k_usb.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+ccci_dpmaif.ko: ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+ccci_ccif.ko: ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+rps_perf.ko:
+snd-soc-mt6377.ko: mt6377-accdet.ko
+wlan_drv_gen4m_6835.ko: mddp.ko wmt_chrdev_wifi.ko wmt_drv.ko btif_drv.ko connadp.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+mtk_core_ctl.ko: scheduler.ko cpufreq_sugov_ext.ko thermal_interface.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mtk_qos.ko: sspm_v3.ko
+reboot-mode.ko:
+mtk-pm-domain-disable-unused.ko:
+mtk-lpm-dbg-common-v1.ko: mtk-lpm.ko
+mtk_perf_ioctl.ko:
+trusted_mem.ko: gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+mddp.ko: ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+subaf.ko:
+devmpu.ko:
+mtk_rpmsg_mbox.ko: mtk-mbox.ko
+mtk_cm_ipi.ko:
+blk-sec-stats.ko: blk-sec-common.ko
+mtk-mbox.ko:
+mtk_pbm.ko: mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+camera_dip_isp6s.ko:
+vdec-fmt.ko:
+gz_virtio_mod.ko: gz_trusty_mod.ko
+mtk_md_power_throttling.ko: ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_battery_oc_throttling.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+mtk_sec_heap.ko: trusted_mem.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+mtk_cm_mgr.ko: mtk_cm_ipi.ko
+snd-soc-rt5512.ko: richtek_spm_cls.ko mtk-sp-spk-amp.ko mtk-scp-audio.ko snd-soc-audiodsp-common.ko audio_ipi.ko mtk-scp-audiocommon.ko scp.ko mtk-afe-external.ko adsp.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mtk-swpm-dbg-common-v1.ko: mtk-swpm.ko ged.ko mtk_gpufreq_mt6835.ko mtk_gpu_qos.ko mtk_qos.ko sspm_v3.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+syscon-reboot-mode.ko: reboot-mode.ko
+mtk-scp-audiocommon.ko: scp.ko mtk-afe-external.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+powerhal_cpu_ctrl.ko:
+mtk_irtx_pwm.ko: mtk-pwm.ko
+gz_main_mod.ko: mtk_sec_heap.ko trusted_mem.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+ccci_fsm_scp.ko: ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko scp.ko mtk-afe-external.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+blk-sec-common.ko:
+mtk-pmic-oc-debug.ko: ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+mtk-swpm-dbg-v6835.ko: mtk-swpm-dbg-common-v1.ko mtk-swpm.ko ged.ko mtk_gpufreq_mt6835.ko mtk_gpu_qos.ko mtk_qos.ko sspm_v3.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+c2k_usb.ko: ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+mtk-cqdma.ko:
+sec_cmd.ko:
+snd-soc-sipa-tuning.ko:
+widevine_driver.ko: mtk_sec_heap.ko trusted_mem.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+snd-soc-audiodsp-common.ko: audio_ipi.ko mtk-scp-audiocommon.ko scp.ko mtk-afe-external.ko adsp.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+fmradio_drv_mt6631_6635.ko: wmt_drv.ko btif_drv.ko connadp.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+camera_eeprom.ko:
+mtk-ssc.ko:
+pmsr.ko:
+bus-parity.ko:
+met_gpu_api.ko: met.ko mtk_gpu_hal.ko
+scp.ko: mtk-afe-external.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mtk-lpm-plat-v1.ko: mtk-lpm-dbg-common-v1.ko mtk-lpm.ko
+trace_mmstat.ko: mtk_gpu_hal.ko
+scheduler.ko: cpufreq_sugov_ext.ko thermal_interface.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+thermal_trace.ko: thermal_interface.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mtk_gpufreq_mt6835.ko: mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+flashlights-ocp8111.ko: flashlight.ko mtk-pwm.ko
+met_sspm_api.ko: met.ko sspm_v3.ko
+met_backlight_api.ko: met.ko
+gz_ipc_mod.ko: gz_trusty_mod.ko
+pmic_temp.ko:
+wmt_drv.ko: btif_drv.ko connadp.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+gz_irq_mod.ko: gz_trusty_mod.ko
+met_vcore_api.ko: met.ko
+mtk-vcodec-enc-v1.ko: vcp.ko mtk-vcodec-common.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mali_prot_alloc_mt6835.ko:
+archcounter_timesync.ko:
+mtk_disp_sec.ko: cmdq-sec-drv.ko mtk_sec_heap.ko trusted_mem.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+clk-disable-unused.ko:
+sspm_v3.ko:
+cpif.ko: ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+gz_trusty_mod.ko:
+ssg.ko: blk-sec-stats.ko blk-sec-common.ko
+adsp.ko: mtk-mbox.ko
+zt7650m.ko:
+mtk-dvfsrc-start.ko:
+mtk-btcvsd.ko:
+mdp_drv_mt6835.ko: cmdq-sec-drv.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+mtk_gpufreq_wrapper.ko: mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+snd-soc-tfa98xx.ko:
+met_ipi_api.ko: met.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+cmdq-sec-drv.ko: gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+mtk-scp-vow.ko: scp.ko mtk-afe-external.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+ccci_md_all.ko: ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+mtk-composite.ko: v4l2-async.ko
+snd-smartpa-aw883xx.ko:
+mtk_ioctl_touch_boost.ko:
+touch_boost.ko: mtk_ioctl_touch_boost.ko mtk_perf_ioctl.ko
+main3af.ko:
+met_mcupm_api.ko: mcupm.ko met.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+mali_mgm_mt6835.ko:
+mtk_usb_f_rndis.ko: mtk_u_ether.ko rps_perf.ko
+flashlight.ko:
+mtk-swpm-mem-dbg-v6835.ko: mtk-swpm.ko mtk_qos.ko sspm_v3.ko
+mtk-vcodec-common.ko:
+mtk_low_battery_throttling.ko:
+input_booster_lkm.ko:
+backlight_cooling.ko:
+md_cooling_all.ko: thermal_trace.ko thermal_interface.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+snd-soc-mtk-common.ko: ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk-scp-audio.ko snd-soc-audiodsp-common.ko audio_ipi.ko mtk-scp-audiocommon.ko scp.ko mtk-afe-external.ko adsp.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+bt_drv_connac1x.ko: wmt_drv.ko btif_drv.ko connadp.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+mt6377-accdet.ko:
+mtk-scp-ultra.ko: mtk-afe-external.ko
+main2af.ko:
+audio_ipi.ko: mtk-scp-audiocommon.ko scp.ko mtk-afe-external.ko adsp.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+met_gpu_adv_api.ko: met.ko mtk_gpu_hal.ko
+mtk-swpm.ko: mtk_qos.ko sspm_v3.ko
+spmtwam.ko:
+camera_mem.ko: mtk_sec_heap.ko trusted_mem.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+ccci_auxadc.ko: ccci_util_lib.ko
+camera_fdvt_isp51.ko: cmdq-sec-drv.ko mtk_sec_heap.ko trusted_mem.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+gps_drv_stp.ko: wmt_drv.ko btif_drv.ko connadp.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+nvmem-mt635x-efuse.ko:
+mtk_u_ether.ko: rps_perf.ko
+arm_dsu_pmu.ko:
+vcp.ko: mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+spmi-mtk-mpu.ko:
+task_turbo.ko: cpufreq_sugov_ext.ko thermal_interface.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+thermal_interface.ko: mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+wmt_chrdev_wifi.ko: wmt_drv.ko btif_drv.ko connadp.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+tuihw.ko: focaltech_tp.ko tuihw-inf.ko sec_cmd.ko mtk_sec_heap.ko trusted_mem.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+cmdq-test.ko: cmdq-sec-drv.ko gz_tz_system.ko gz_ipc_mod.ko gz_trusty_mod.ko
+met_emi_api.ko: met.ko
+snd-soc-mtk-scp-ultra.ko: mtk-scp-ultra.ko scp.ko mtk-afe-external.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+connfem.ko:
+gz_tz_system.ko: gz_ipc_mod.ko gz_trusty_mod.ko
+mtk_jpeg.ko:
+ged.ko: mtk_gpufreq_mt6835.ko mtk_gpu_qos.ko mtk_qos.ko sspm_v3.ko mtk_gpufreq_wrapper.ko mtk_gpu_hal.ko mtk_battery_oc_throttling.ko mtk_bp_thl.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+c2k_usb_f_via_modem.ko: c2k_usb.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+gz_log_mod.ko: gz_trusty_mod.ko
+load_track.ko:
+imgsensor_isp6s.ko: camera_eeprom.ko
+mtk-scp-audio.ko: audio_ipi.ko mtk-scp-audiocommon.ko scp.ko mtk-afe-external.ko adsp.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+sub2af.ko:
+mtk-vcodec-dec-v1.ko: vcp.ko mtk-vcodec-common.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+fhctl.ko: mcupm.ko gpueb.ko mtk_tinysys_ipi.ko mtk_rpmsg_mbox.ko mtk-mbox.ko
+uload_ind.ko: load_track.ko
+c2k_usb_f_via_ets.ko: c2k_usb.ko ccci_md_all.ko ccci_auxadc.ko ccci_util_lib.ko ccmni.ko rps_perf.ko mtk_pbm.ko mtk_mdpm.ko mtk_dynamic_loading_throttling.ko mtk_low_battery_throttling.ko
+mtk_mdpm.ko:

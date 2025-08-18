@@ -1,0 +1,9 @@
+ro.display.series=Samsung Galaxy A16 5G
+ro.boot.dynamic_partitions=true
+sys.usb.config=mtp
+ro.boot.boot_devices=bootdevice,soc/11270000.ufshci,11270000.ufshci
+
+# MTP
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
